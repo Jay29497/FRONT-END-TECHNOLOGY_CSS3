@@ -1,0 +1,112 @@
+*{
+    padding: 0%;
+    margin: 0%;
+}
+.container {
+    background: url(../images/pexels-sora-shimazaki-5926397.jpg);
+    min-height: 100vh;
+    background-size: cover;
+}
+nav img {
+    height: 70px;
+}
+nav ul {
+    float: right;
+    list-style-type: none;
+    display: flex;
+}	
+nav ul li {
+    display:inline-block;
+}
+nav a {
+    display: block;
+    padding: 0 30px;	
+    color: white;
+    font-size: 25px;
+    line-height: 70px;
+    text-decoration: none;
+    /* text-shadow: 3px 3px 3px black; */
+}
+nav a:hover { 
+    background: linear-gradient(90deg, rgba(5,21,23,1) 14%, rgb(248, 249, 249) 100%);
+    color: black;
+    /* text-shadow: 3px 3px 3px rgb(39, 29, 231); */
+}
+.sidebar {
+    margin: 50px;
+    padding-top: 50px;
+    width: 300px;
+    position: fixed;
+    height: 60%;
+    text-align: center;
+    background: transparent;
+    border: 2px solid rgb(37, 39, 42);
+    backdrop-filter: blur(10px);
+    font-size: 25px;
+}
+.sidebar ul {
+    list-style-type: none;
+}
+.sidebar a {
+    display: block;
+    color: silver;
+    padding: 20px;
+    text-decoration: none;
+}
+.sidebar a:hover{
+    /* background-color: dimgray; */
+    background: linear-gradient(90deg, rgba(5,21,23,1) 14%, rgb(248, 249, 249) 100%);
+    /* color: black; */
+    color: silver;
+    /* text-shadow: 3px 3px 3px rgb(72, 19, 44); */
+}
+.sidebar ul li{
+    padding: 4px 0;
+    cursor: pointer;
+    list-style: none;
+    transition: all ease-out 120ms;
+}
+.sidebar ul li a{
+    display: block;
+    font-size: 24px;
+    transition: all ease 450ms;
+}
+.tooltip ul li{
+    position: relative;
+}
+.tooltip ul li>span{
+    background: dimgray;
+    color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    /* box-shadow: 0px 6px 8px palevioletred; */
+    position: absolute;
+    top: 5px;
+    left: 320px;
+    width: 300px;
+    display: none;
+}
+.tooltip ul li:hover span{
+    display: block;
+}
+.tooltip ul li>span::before{
+    content: "";
+    border: 10px;
+    border-style: solid;
+    border-color: transparent dimgray transparent transparent;
+    position: absolute;
+    left: -19px;
+}
+div .content {
+    margin: 100px 70px;
+    padding-left: 320px;
+    color: silver;
+    font-size: 50px;
+    font-weight: bold;
+    text-shadow: 3px 3px 3px white;
+}
+/* div .content:hover{
+    color: purple;
+    text-shadow: 3px 3px 3px rgb(231, 29, 231);
+} */
+  

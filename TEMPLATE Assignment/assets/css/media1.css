@@ -1,0 +1,48 @@
+/* MOBILE */
+@media (max-width: 992px) {
+  .banner {
+    background: linear-gradient(
+        90deg,
+        rgba(137, 225, 117, 0.9),
+        rgba(61, 105, 188, 0.9)
+      ),
+      url(../images/pexels-lisa-fotios-1989304.jpg) no-repeat center;
+  }
+  .container1 {
+    /* flex-flow: column; */
+    text-align: center;
+    justify-content: center;
+    /* padding: 30px; */
+    /* gap: 30px; */
+  }
+  header > nav {
+    text-align: center;
+  }
+
+  header > nav > ul {
+    float: none;
+  }
+
+  header > nav > ul > li {
+    display: block;
+  }
+}
+
+/* TAB */
+@media (min-width: 993px) and (max-width: 1200px) {
+  .banner {
+    background: linear-gradient(
+        90deg,
+        rgba(236, 78, 146, 0.9),
+        rgba(154, 61, 188, 0.9)
+      ),
+      url(../images/mobile.bg.jpg) no-repeat center;
+  }
+  header > nav {
+    text-align: center;
+  }
+
+  header > nav > ul {
+    float: none;
+  }
+}

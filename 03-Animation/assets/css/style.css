@@ -1,0 +1,78 @@
+/* P1.HTML - Animation (adding bg color and font size) */
+.commonAnimation{
+    padding: 20px;
+    border-radius: 5px;
+    margin: 30px;
+    height: 300px;
+}
+.commonAnimation>h1{
+    text-align: center;
+    /* color: #fff;  */ /*p1.html*/
+    /* font-size: 40px; */
+    text-shadow: 3px 3px 3px #000;
+}
+.animation1{
+    background: black;
+    /* animation: bepractical;
+    animation-duration: 10s;
+    animation-iteration-count: infinite; */
+    animation: bepractical 10s infinite;
+}
+@keyframes bepractical {
+    from{background:red;font-size: 40px;}
+    to{background: blue;font-size: 70px;}
+}
+
+/* P2.HTML (adding bg image and text color)*/
+.animation2{
+    /* background: url(../images/nature.jpg) no-repeat; */
+    background-size: 100%;
+    animation: animation_image 10s infinite;
+}
+@keyframes animation_image {
+    from{background: url(../images/tree.jpg) no-repeat left;color: purple;}
+    to{background: url(../images/tree.jpg) no-repeat right;color:darkblue;}
+}
+
+/* P3.HTML (changing bg position) */
+.animation3{
+    background: #fc466b;
+    padding: 20px;
+    margin: 30px;
+    border-radius: 5px;
+    color: #fff;
+    position: absolute;
+    animation: cssAnimation3 10s infinite;
+}
+@keyframes cssAnimation3 {
+    0%{
+        top: 0px;
+        left: 0px;
+        background: darkblue;
+        color: palevioletred;
+    }
+    25%{
+        top: 0px;
+        left: 600px;
+        background: darkcyan;
+        color: maroon;
+    }
+    50%{
+        top: 400px;
+        left: 600px;
+        background-color: darkgoldenrod;
+        color: red;
+    }
+    75%{
+        top: 400px;
+        left: 0px;
+        background: darkmagenta;
+        color: white;
+    }
+    100%{
+        top: 0px;
+        left: 0px;
+        background: darkgreen;
+        color: black;
+    }
+}

@@ -1,0 +1,37 @@
+/* MOBILE */
+@media (max-width: 992px) {
+    /* NAVIGATION */
+    .container{
+        background: url(../images/mobile.jpg);
+        background-size: cover;
+    }
+    nav {
+        text-align: center;
+    }
+
+    nav ul{
+        float: none;
+    }
+
+    nav ul li{
+        display: block;
+    }
+    /* BANNER CODE */
+}
+
+/* TABLET */
+@media (min-width: 993px) and (max-width: 1200px){
+    /* NAVIGATION */
+    .container{
+        background: url(../images/tab.jpg);
+        background-size: cover;
+    }
+    nav {
+        text-align: center;
+    }
+
+    nav ul {
+        float: none;
+    }
+    /* BANNER CODE */
+}

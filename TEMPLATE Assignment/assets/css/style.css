@@ -1,0 +1,332 @@
+@import url("https://fonts.googleapis.com/css2?family=Unica+One&display=swap");
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box; /*upto the border*/
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+/* BOOTSTRAP GRID LOGIC  */
+.col1 {
+  width: 0.33%;
+}
+.col2 {
+  width: 16.66%;
+}
+.col3 {
+  width: 25%;
+}
+.col4 {
+  width: 33.33%;
+}
+.col5 {
+  width: 41.66%;
+}
+.col6 {
+  width: 50%;
+}
+.col7 {
+  width: 58.33%;
+}
+.col8 {
+  width: 66.66%;
+}
+.col9 {
+  width: 75%;
+}
+.col10 {
+  width: 83.33%;
+}
+.col11 {
+  width: 91.66%;
+}
+.col12 {
+  width: 100%;
+}
+
+/* .collection{} */
+[class*="col"] {
+  float: left;
+  padding: 10px;
+}
+.row::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+/* MARGIN */
+.mx-250 {
+  margin: auto 250px;
+}
+.ml-250 {
+  margin-left: 250px;
+}
+.mr-250 {
+  margin-right: 250px;
+}
+.mt-30 {
+  margin-top: 30px;
+}
+/* PADDING */
+.pt-60 {
+  padding-top: 60px;
+}
+.pt-70 {
+  padding-top: 70px;
+}
+.pt-90 {
+  padding-top: 90px;
+}
+.p-20 {
+  padding: 20px;
+}
+/* LINE HEIGHT */
+.ln-1 {
+  line-height: 1.5;
+}
+.ln-2 {
+  line-height: 2;
+}
+/* BG - COLORS */
+.bg-teal {
+  background: rgb(78, 179, 242);
+}
+.bg-black {
+  background: rgb(32, 32, 32);
+}
+.bg-blue {
+  background: rgb(93, 93, 221);
+}
+.bg-white {
+  background: white;
+}
+/* TEXT - COLORS */
+.text-teal {
+  color: rgb(78, 179, 242);
+}
+.text-blue {
+  color: rgb(93, 93, 221);
+}
+.text-grey {
+  color: rgb(214, 213, 213);
+}
+.text-gray {
+  color: rgb(165, 163, 163);
+}
+.text-white {
+  color: white;
+}
+/* TEXT ALIGNMENT */
+.text-right {
+  text-align: right;
+}
+.text-left {
+  text-align: left;
+}
+.text-center {
+  text-align: center;
+}
+.text-justify {
+  text-align: justify;
+}
+
+/* LETTER SPACING */
+.ls-2 {
+  letter-spacing: 2px;
+}
+.ls-3 {
+  letter-spacing: 3px;
+}
+
+/* FONT FAMILY */
+.ff {
+  font-family: "Unica One", cursive;
+}
+
+/* NAVIGATION BAR */
+nav > img {
+  height: 66px;
+  width: 150px;
+}
+nav > ul {
+  list-style-type: none;
+  float: right;
+}
+nav > ul > li {
+  display: inline-block;
+  padding: 25px 15px;
+}
+nav > ul > li > a {
+  color: rgb(104, 104, 104);
+  text-decoration: none;
+  font-size: 17px;
+  font-family: "Unica One", cursive;
+}
+nav > ul > li > a:hover {
+  color: rgb(55, 55, 181);
+}
+
+/* DESKTOP BANNER */
+.desktop-banner {
+  overflow: hidden;
+  position: relative;
+}
+.tablet-banner,
+.mobile-banner {
+  display: none;
+}
+.banner {
+  background: linear-gradient(
+      90deg,
+      rgba(155, 117, 225, 0.9),
+      rgba(61, 97, 188, 0.9)
+    ),
+    url(../images/bgimg1.jpg) no-repeat center;
+  min-height: 90vh;
+  background-size: cover;
+}
+/* .banner1 {
+  background: linear-gradient(
+      90deg,
+      rgba(155, 117, 225, 0.9),
+      rgba(61, 97, 188, 0.9)
+    ),
+    url(../images/pexels-lisa-fotios-1989304.jpg) no-repeat center;
+  min-height: 90vh;
+  background-size: cover;
+}
+.banner2 {
+  background: linear-gradient(
+      90deg,
+      rgba(155, 117, 225, 0.9),
+      rgba(61, 97, 188, 0.9)
+    ),
+    url(../images/mobile.bg.jpg) no-repeat center;
+  min-height: 90vh;
+  background-size: cover;
+} */
+.container {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+div > h1 {
+  font-size: 40px;
+  font-weight: lighter;
+}
+div > p {
+  font-size: 18px;
+}
+div > button {
+  border: none;
+  border-radius: 40px;
+  width: 200px;
+  height: 50px;
+  font-size: 20px;
+  cursor: pointer;
+}
+div > button:hover {
+  background-color: rgb(55, 55, 181);
+}
+/* WELCOME TO NEW APP */
+.newapp {
+  min-height: 75vh;
+}
+section > h1 {
+  font-size: 50px;
+  font-weight: lighter;
+}
+hr.half-width {
+  width: 7%;
+  margin: 0 auto;
+  margin-top: 25px;
+}
+section > div > .profile > img {
+  height: 200px;
+  width: 200px;
+}
+section > div > div > h2 {
+  font-size: 35px;
+  font-weight: lighter;
+}
+/* LEARN MORE */
+.learn-more {
+  min-height: 60vh;
+}
+.learn-more > div > p {
+  font-size: 25px;
+}
+/* APP SCREENTSHOTS */
+.app {
+  min-height: 100vh;
+}
+.app > p {
+  font-weight: lighter;
+}
+.app > div > div > img {
+  height: 450px;
+  width: 251px;
+  padding: 10px;
+}
+/* APP PRICING */
+.pricing {
+  min-height: 85vh;
+}
+.card {
+  border: none;
+  height: 310px;
+  width: 300px;
+}
+.card > h3,
+h4 {
+  font-weight: lighter;
+}
+/* SUBSCRIBE NEWSLETTER */
+.subscribe {
+  background: linear-gradient(90deg, rgb(78, 179, 242), rgba(71, 162, 246, 0.9)),
+    url(../images/pexels-ingo-joseph-35969.jpg) no-repeat center;
+  min-height: 45vh;
+  background-size: cover;
+}
+.subscribe > h2 {
+  font-size: 40px;
+  font-weight: lighter;
+}
+.subscribe > div > input {
+  background-color: transparent;
+  border: none;
+  border-bottom: 3px solid white;
+  padding-bottom: 7px;
+  outline: none;
+  width: 30%;
+  margin-top: 22px;
+  font-size: 15px;
+}
+::placeholder {
+  color: rgb(242, 240, 240);
+}
+.subscribe > div > button {
+  font-size: 17px;
+}
+/* FOOTER */
+.footer {
+  min-height: 20vh;
+}
+.footer > div > p {
+  font-weight: lighter;
+  font-size: 15px;
+}
+/* ICONS */
+.footer > .icons [class*="fa"] {
+  transition: 1s;
+  cursor: pointer;
+  padding: 10px;
+  color: gray;
+}
+.footer > .icons [class*="fa"]:hover {
+  color: white;
+}

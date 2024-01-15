@@ -1,0 +1,85 @@
+* {
+  padding: 0%;
+  margin: 0%;
+}
+.container {
+  background: url(../images/pexels-sora-shimazaki-5926397.jpg);
+  min-height: 100vh;
+  background-size: cover;
+  padding-top: 50px;
+}
+nav {
+  background: linear-gradient(
+    90deg,
+    rgb(21, 133, 143),
+    rgba(5, 21, 23, 1) 50%,
+    rgba(16, 230, 251, 1)
+  );
+  /* margin-top: 20px; */
+}
+nav img {
+  height: 66px;
+}
+nav ul {
+  float: right;
+  list-style-type: none;
+  display: flex;
+}
+nav ul ul {
+  display: none;
+  position: absolute;
+  top: 120px;
+}
+nav ul li:hover > ul {
+  display: inherit;
+}
+nav ul ul li {
+  width: 210px;
+  float: none;
+  display: list-item;
+  position: relative;
+  background-color: teal;
+}
+nav ul ul ul li {
+  top: -70px;
+  left: 210px;
+  background-color: teal;
+}
+nav a {
+  display: block;
+  padding: 0 35px;
+  color: whitesmoke;
+  font-size: 25px;
+  line-height: 70px;
+  text-decoration: none;
+}
+nav a:hover {
+  background: linear-gradient(
+    90deg,
+    rgba(5, 21, 23, 1) 14%,
+    rgba(16, 230, 251, 1) 100%
+  );
+}
+li > a:after {
+  content: "▼";
+}
+li > a:only-child:after {
+  content: "";
+}
+ul ul li > a:after {
+  content: "►";
+}
+ul ul li > a:nth-child(3):after {
+  content: "";
+}
+.content {
+  margin-top: 200px;
+  text-align: center;
+  font-size: 40px;
+  color: teal;
+  text-shadow: 3px 3px 3px darkslategrey;
+}
+/* .content:hover {
+	color: darkolivegreen;
+    text-shadow: 3px 3px 3px darkblue;
+} */

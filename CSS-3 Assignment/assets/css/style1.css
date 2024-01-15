@@ -1,0 +1,58 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+video{
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    object-fit: cover;
+}
+header{
+    /* background: linear-gradient(rgb(110, 96, 19),rgb(251, 247, 247)); */
+    background: transparent;
+}
+header>nav{
+    float: right;
+    padding: 20px;
+}
+header>nav a{
+    text-decoration: none;
+    padding: 20px;
+    font-size: 25px;
+    font-weight: bold;
+    color: white
+}
+header>nav a:hover{
+    background: linear-gradient(rgb(110, 96, 16),black);
+}
+div{
+    padding-top: 250px;
+    color: beige;
+    width: 600px;
+    font-size: 30px;
+    font-weight: bold;
+}
+div>p{
+    font-size: 20px;
+    color: blanchedalmond;
+}
+div>h1>span{
+    color: rgb(110, 96, 16);
+}
+div>a{
+    border-radius: 40px;
+    padding: 10px 30px;
+    text-decoration: none;
+    background: linear-gradient(rgb(110, 96, 16),silver);
+    color: black;
+}
+div a:hover{
+    background: linear-gradient(darkred,silver);
+    color: silver
+}
+
+header, img, div, nav{
+    position: relative;
+}
